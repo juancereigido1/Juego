@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rompecabezas</title>
+    <link rel="stylesheet" href="juego.css" media="screen" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="juego.js"></script>
+    <link rel="icon" href="img/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+    <div class="caja">
+      <div class="izquierda">
+        <div class="containerTitulo">
+          <h1 class="titulo">Rompecabezas</h1>
+        </div>
+        <div class="pasos">
+          <div class="explicacion">
+            <p class="titulos">Juego:</p>
+            <p>Conseguí formar la imagen de Buenos Aires para ganar!</p>
+          </div>
+          <div class="instrucciones">
+            <p class="titulos">Instrucciones:</p>
+            <p>Para lograr formar la imagen debés mover cada pieza hacia diferentes lugares hasta que aparezca el mesaje "Ganaste!"</p>
+          </div>
+          <div class="controles">
+            <p class="titulos">Controles:</p>
+            <div class="botones">
+              <div>
+                <img src="img/flecha.png" alt="botonArriba" class="botonArriba">
+              </div>
+              <div class="botonesAbajo">
+                <div>
+                  <img src="img/flecha.png" alt="botonIzquierda" class="botonIzquierda">
+                </div>
+                <div>
+                  <img src="img/flecha.png" alt="botonAbajo" class="botonAbajo">
+                </div>
+                <div>
+                  <img src="img/flecha.png" alt="botonDerecha" class="botonDerecha">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="juego">
+        <div class="container">
+          <div class="content">
+            <div class="iniciar">
+              <a href="#" class="botonIniciar">
+                Jugar
+              </a>
+              <div class="ganador">
+                <div class="containerTeclas">
+                  <h1 class="contadorTeclas" id="textoTeclas"></h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="derechaArriba">
+        <div>
+          <p class="textoDerecha">
+            ¿Se te complicó? ¡Reinicia el juego y volvé a empezar!
+          </p>
+        </div>
+        <div class="containerReinicio">
+          <div class="contentReinicio">
+            <div>
+              <a href="#">
+                <img src="img/restart.png" alt="reiniciar" class="botonReinicio"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="derechaAbajo">
+        <p>Elegí tu nivel!</p>
+        <div class="niveles">
+          <img src="img/nivel1.jpg" alt="nivel1" class="imagenNivel" id="nivel1"/>
+          <img src="img/nivel2.jpg" alt="nivel2" class="imagenNivel" id="nivel2"/>
+          <img src="img/nivel3.jpeg" alt="nivel3" class="imagenNivel" id="nivel3"/>
+        </div>
+      </div>
+      <div class="derechaAbajo2">
+        <div id="backgroundAudio">
+           <audio id="audio" controls="">
+              <source src="http://192.254.184.234/~tangh/01_admin_resources/Shimmer/ogg/Smile.ogg" type="audio/ogg"></source>
+              <source src="http://192.254.184.234/~tangh/01_admin_resources/Shimmer/mp3/Smile.mp3" type="audio/mpeg"></source>
+              Your browser does not support the audio element.
+           </audio>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
